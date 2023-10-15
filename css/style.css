@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+h1 {
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px rgba(80, 78, 78, 0.5);
+}
+
+.imge {
+    position: relative;
+}
+
+.bee1{
+    width: 280px;
+    margin-top: -10px;
+    animation: mover 5s linear infinite;
+    transform-origin: left center;
+    transform: translateX(100%);
+}
+
+.bee2{
+    width: 190px;
+    animation: moveer 5s linear infinite;
+    transform-origin: left center;
+    transform: translateX(100%);
+}
+
+img{
+    width: 300px;
+    display: flex;
+    position: relative;
+    margin: 30px auto 0;
+    margin-right: 300px;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(200%); /* Posição inicial na esquerda da tela */
+    }
+    100% {
+        transform: translateX(-600%); /* Final da tela na direita */
+    }
+}
+
+@keyframes moveer {
+    0% {
+        transform: translateX(190%); 
+    }
+    100% {
+        transform: translateX(-900%); 
+    }
+}
